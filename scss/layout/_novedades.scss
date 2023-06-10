@@ -1,0 +1,34 @@
+h1 {
+    @include fonts (45px, $font, blond, $main-color );
+    font-style: oblique;
+    text-align: center;
+    padding-top: $p-2;
+}
+.texto {
+    @include fonts (35px, $font, blond, $text-color);
+    font-style: oblique;
+    text-align: center;
+    padding: $p-1;
+}
+
+/*mapa*/
+iframe {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+
+
+
+/*formulario*/
+form {
+    color: $dark-color;
+    @include flex (column,center,center, $p-2);
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+}
+

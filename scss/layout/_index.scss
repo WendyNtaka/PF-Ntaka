@@ -1,0 +1,36 @@
+h1 {
+    @include fonts (45px, $font, blond, $main-color );
+    font-style: oblique;
+    text-align: center;
+    padding-top: $p-2;
+
+}
+
+.texto {
+    @include fonts (35px, $font, blond, $text-color);
+    font-style: oblique;
+    text-align: center;
+    padding: $p-1;
+}
+
+
+.carousel-item {
+    padding: 25px $p-1;
+    animation-name: animacion;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+
+@keyframes animacion{
+
+    0%{
+        transform: translateX(-100%);
+        opacity:0 ;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity:1 ;
+    }
+}

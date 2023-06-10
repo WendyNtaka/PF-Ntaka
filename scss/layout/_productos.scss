@@ -1,0 +1,84 @@
+h1 {
+    @include fonts (45px, $font, blond, $main-color );
+    font-style: oblique;
+    text-align: center;
+    padding-top: $p-2;
+}
+.texto {
+    @include fonts (35px, $font, blond, $text-color);
+    font-style: oblique;
+    text-align: center;
+    padding: $p-1;
+}
+
+
+
+h3 {
+    color: $letter-color;
+}
+
+/*grids*/
+.grilla {
+
+    display: grid;
+    /*declaramos la estructura*/
+    grid-template-columns: repeat(3, 1fr);
+    /*cantidad de columnas*/
+    grid-template-rows: repeat(2, 600px);
+    /*auto se adapata al alto del hijo*/
+    grid-template-areas:
+        'area1 area2 area3'
+        'area4 area5 area6';
+    gap: $p-2;
+    padding: 35px;
+    align-items: center;
+    justify-items: center;
+    place-items: center;
+
+    
+.grilla__hijo {
+    width: 100%;
+    height: 500px;
+    @include flex (column, center, center, $p-2);
+   
+    padding: 30px;
+
+    img {
+        @include imagenes (100%, 80%, cover);
+        @extend .rounded ;
+        transition: 2s;
+        &:hover{
+            transform: scale(1.3);
+        }
+        
+    }
+    
+}
+
+}
+
+.g1 {
+    grid-area: area1;
+}
+
+.g2 {
+    grid-area: area2;
+}
+
+.g3 {
+    grid-area: area3;
+}
+
+.g4 {
+    grid-area: area4;
+}
+
+.g5 {
+    grid-area: area5;
+}
+
+.g6 {
+    grid-area: area6;
+}
+
+

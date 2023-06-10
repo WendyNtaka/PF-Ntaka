@@ -1,0 +1,18 @@
+/*footer*/
+footer {
+    padding: 3px;
+    @include flex (initial, center, self-end, $p-1);
+
+a i {
+    
+    @include fonts ($p-2, $font, blond, $dark-color);
+
+
+    &:hover {
+        color: $hover-color;
+        transition: 1s;
+    }
+}
+}
+
+

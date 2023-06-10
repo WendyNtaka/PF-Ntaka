@@ -1,0 +1,31 @@
+h1 {
+    @include fonts (45px, $font, blond, $main-color );
+    font-style: oblique;
+    text-align: center;
+    padding-top: $p-2;
+}
+
+
+
+.btn-outline-primary {
+    background-color: antiquewhite;
+}
+
+.accordion-item {
+    background: rgba(247, 225, 209, 0.766);
+    color: $dark-color;
+}
+
+.accordion-button {
+    background-color: rgb(220, 180, 134);
+}
+
+.accordion-flush {
+    @include flex (column,center,center,$p-5);
+    text-align:center;
+    width: 100%;
+    padding: 65px;
+
+
+}
+

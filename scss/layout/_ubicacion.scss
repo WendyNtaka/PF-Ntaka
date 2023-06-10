@@ -1,0 +1,60 @@
+h1 {
+    @include fonts (45px, $font, blond, $main-color );
+    font-style: oblique;
+    text-align: center;
+    padding-top: $p-2;
+}
+
+.texto {
+    @include fonts (35px, $font, blond, $text-color);
+    font-style: oblique;
+    text-align: center;
+    padding: $p-1;
+}
+
+h3 {
+    color: $letter-color;
+}
+
+/*mapa*/
+iframe {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.grilla__2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 500px);
+    grid-template-areas:
+        'area7 area8';
+    gap: $p-2 ;
+    padding: 35px;
+    align-items: center;
+
+    .grilla___hijo {
+        width: 100%;
+        height: 500px;
+        @include flex (column, center, center, $p-2);
+        background-color: $grilla-color;
+        padding: 30px;
+
+        img {
+            @include imagenes(100%, 80%, cover);
+            @extend .rounded;
+        }
+
+    }
+
+
+}
+
+.g7 {
+    grid-area: area7;
+}
+
+.g8 {
+    grid-ares: area8;
+}

@@ -1,0 +1,24 @@
+.rounded{
+    border-radius: 3px solid $border-color;
+}
+
+@mixin flex ($direction , $justify, $align , $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin imagenes ($width, $height, $object) {
+    width: $width;
+    height: $height;
+    object-fit: $object;
+}
+
+@mixin fonts ($size, $family , $grosor, $color) {
+    font-size: $size;
+    font-family: $family;
+    font-weight: $grosor;
+    color: $color;
+}
